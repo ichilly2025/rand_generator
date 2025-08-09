@@ -1,0 +1,12 @@
+type RandomNumbersResult = record {
+    seed: blob;
+    numbers: vec nat32;
+    count: nat64;
+    range_max: nat32;
+    generation_time_ns: nat64;
+    cycles_used: nat64;
+};
+
+service : {
+    "generate_random_numbers": () -> (variant { Ok: RandomNumbersResult; Err: text });
+}

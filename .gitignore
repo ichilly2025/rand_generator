@@ -1,0 +1,22 @@
+# Rust
+target/
+Cargo.lock
+
+# dfx
+.dfx/
+
+# Node.js
+node_modules/
+dist/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
